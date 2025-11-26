@@ -1,0 +1,10 @@
+model:
+  name: "naver-clova-ix/donut-base"
+  task: "document-question-answering"
+ocr:
+  lang: "eng"
+  dpi: 300
+server:
+  host: "0.0.0.0"
+  port: 8000
+storage_dir: "./storage"

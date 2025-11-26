@@ -1,0 +1,12 @@
+transformers>=4.30.0
+torch>=1.12.0
+pdf2image
+pytesseract
+Pillow
+PyMuPDF
+fastapi
+uvicorn[standard]
+python-multipart
+pyyaml
+requests
+tqdm

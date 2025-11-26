@@ -1,0 +1,15 @@
+# Example commands for DOCINTEL
+# 1) Start API server
+uvicorn app:app --host 0.0.0.0 --port 8000
+
+# 2) Upload PDF
+curl -X POST "http://127.0.0.1:8000/upload_pdf" -F "file=@examples/invoice_sample.pdf"
+
+# 3) Get extracted text
+curl "http://127.0.0.1:8000/doc/<DOC_ID>/text"
+
+# 4) Get entities
+curl "http://127.0.0.1:8000/doc/<DOC_ID>/entities"
+
+# 5) Summarize document
+curl -X POST "http://127.0.0.1:8000/doc/<DOC_ID>/summarize"
