@@ -1,17 +1,4 @@
----
-language:
-  - en
-license: mit
-tags:
-  - document-question-answering
-  - ocr
-  - summarization
-  - document-ai
-pipeline_tag: document-question-answering
-model_name: docintel
----
-
-# 🧾 DOCINTEL — Document AI (Donut-based)
+# 🧾 DOCINTEL — Document AI
 
 **DOCINTEL** extracts structured insights from scanned PDFs and images using **naver-clova-ix/donut-base** (Donut). It supports OCR fallback, entity extraction, and document summarization via Donut on page images.
 
@@ -44,6 +31,3 @@ uvicorn app:app --host 0.0.0.0 --port 8000
 - Donut requires vision-encoder-decoder inference which may need GPU for speed.
 - For text-only PDFs consider using `extract_text_from_pdf` then a text summarizer instead of Donut.
 - This repo is a prototype/demo. Validate on your data before production use.
-
-## License
-MIT
